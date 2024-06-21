@@ -37,6 +37,10 @@ input {
   outline: none;
 }
 
+p {
+  margin: 0;
+}
+
 .gallery {
   max-width: 1128px;
   display: flex;
@@ -166,4 +170,107 @@ input {
 
 .login-form button:hover {
   background: rgb(108, 140, 255);
+}
+
+.widget {
+  display: flex;
+  flex-direction: column;
+  row-gap: 16px;
+  align-items: center;
+}
+
+.widget p {
+  color: rgb(46, 47, 66);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+}
+
+.change-color {
+  width: 148px;
+  height: 40px;
+  color: rgb(255, 255, 255);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  border-radius: 8px;
+  border: none;
+  background: rgb(78, 117, 255);
+}
+
+.change-color:hover {
+  background: rgb(108, 140, 255);
+}
+
+#controls {
+  width: 486px;
+  height: 104px;
+  display: flex;
+  flex-direction: row;
+  column-gap: 16px;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  background: rgb(246, 246, 254);
+  margin: 24px 24px 16px 24px;
+}
+
+#controls input {
+  width: 150px;
+  height: 40px;
+  border: 1px solid rgb(128, 128, 128);
+  border-radius: 8px;
+  color: rgb(46, 47, 66);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+  text-align: center;
+}
+
+#controls button {
+  width: 120px;
+  height: 40px;
+  border: none;
+  border-radius: 8px;
+  color: rgb(255, 255, 255);
+  font-family: Montserrat;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: 24px;
+  letter-spacing: 0.04em;
+}
+
+[data-create] {
+  background: rgb(78, 117, 255);
+}
+
+[data-destroy] {
+  background: rgb(255, 78, 78);
+}
+
+[data-create]:hover {
+  background: rgb(108, 140, 255);
+}
+
+[data-destroy]:hover {
+  background: rgb(255, 112, 112);
+}
+
+#boxes {
+  max-width: 486px;
+  min-height: 134px;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  column-gap: 44px;
+  row-gap: 16px;
+  background: rgb(246, 246, 254);
+  border-radius: 8px;
+  margin: 0 24px 24px 24px;
 }
